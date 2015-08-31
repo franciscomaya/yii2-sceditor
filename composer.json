@@ -25,11 +25,5 @@
         "asset-installer-paths": {
             "bower-asset-library": "vendor/bower"
         }
-    },
-    "repositories":[
-        {
-            "type": "git",
-            "url": "///home/francisco/www/cmsgal/cmsgal/frontend/runtime/tmp-extensions/yii2-sceditor"
-        }
-    ]
+    }
 }
