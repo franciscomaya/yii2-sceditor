@@ -35,7 +35,9 @@ class SCEditor extends InputWidget
         
         SCEditorWidgetAsset::register($view);
         
-        $js[] = "$(\"textarea\").sceditor({
+        $id = $this->options['id'];
+        
+        $js[] = "$(\"#{$id}\").sceditor({
                 plugins: \"bbcode\",
             });";
         
