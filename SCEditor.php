@@ -18,18 +18,18 @@ class SCEditor extends InputWidget
     
     public function run()
     {
-        $this->registerPlugin();
-        
         if ($this->hasModel()) {
             echo Html::activeTextarea($this->model, $this->attribute, $this->options);
         } else {
             echo Html::textarea($this->name, $this->value, $this->options);
         }
+        
+        $this->registerClientScript();
     }
     
-    protected function registerPlugin()
+    protected function registerClientScript()
     {
-        $js = [];
+        //$js = [];
         
         $view = $this->getView();
         
@@ -37,10 +37,11 @@ class SCEditor extends InputWidget
         
         $id = $this->options['id'];
         
-        $js[] = "$(\"#{$id}\").sceditor({
+        $js = "$(\"#{$id}\").sceditor({
                 plugins: \"bbcode\",
             });";
         
-        $view->registerJs(implode("\n", $js));
+        //$view->registerJs(implode("\n", $js));
+        $view->registerJs($js, View::POS_READY);
     }
 }
