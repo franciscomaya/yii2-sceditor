@@ -2,7 +2,7 @@
     "name": "franciscomaya/yii2-sceditor",
     "description": "SCEditor, a lightweight WYSIWYG BBCode & HTML editor extension for Yii 2.0 Framework",
     "type": "yii2-extension",
-    "keywords": "['yii2','extension','sceditor','bbcode']",
+    "keywords": ["yii2","extension","sceditor","bbcode"],
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -19,9 +19,6 @@
         }
     },
     "extra": {
-        "branch-alias": {
-            "master": "*"
-        },
         "asset-installer-paths": {
             "bower-asset-library": "vendor/bower"
         }
