@@ -5,6 +5,7 @@ namespace franciscomaya\sceditor;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\widgets\InputWidget;
+use yii\web\View;
 
 /**
  * This is just an example.
