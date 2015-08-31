@@ -41,6 +41,6 @@ class SCEditor extends InputWidget
                 plugins: \"bbcode\",
             });";
         
-        //$view->registerJs(implode("\n", $js));
+        $view->registerJs(implode("\n", $js));
     }
 }
