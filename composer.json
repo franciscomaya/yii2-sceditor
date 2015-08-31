@@ -19,8 +19,17 @@
         }
     },
     "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
         "asset-installer-paths": {
             "bower-asset-library": "vendor/bower"
         }
-    }
+    },
+    "repositories":[
+        {
+            "type": "git",
+            "url": "///home/francisco/www/cmsgal/cmsgal/frontend/runtime/tmp-extensions/yii2-sceditor"
+        }
+    ]
 }
