@@ -14,7 +14,6 @@ class SCEditor extends InputWidget
     public function init()
     {
         parent::init();
-        $this->initOptions();
     }
     
     public function run()
@@ -36,13 +35,7 @@ class SCEditor extends InputWidget
         
         SCEditorWidgetAsset::register($view);
         
-        $id = $this->options['id'];
-        
-        $options = $this->clientOptions !== false && !empty($this->clientOptions)
-            ? Json::encode($this->clientOptions)
-            : '{}';
-        
-        $js[] = "SCEDITOR.replace('$id', $options);";
+        $js[] = "alert('Hola mundo');";
         
         $view->registerJs(implode("\n", $js));
     }
