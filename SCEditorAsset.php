@@ -15,10 +15,11 @@ class SCEditorAsset extends AssetBundle
         'minified/themes/default.min.css',
     ];
     
-    /*public $depends = [
+    public $depends = [
         'yii\web\YiiAsset',
-        'yii\web\JqueryAsset'
-    ];*/
+        'yii\web\JqueryAsset',
+        'yii\bootstrap\BootstrapAsset',
+    ];
     
     public function init()
     {
