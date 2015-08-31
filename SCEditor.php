@@ -37,9 +37,7 @@ class SCEditor extends InputWidget
         
         $id = $this->options['id'];
         
-        $js[] = "$(\"#{$id}\").sceditor({
-                plugins: \"bbcode\",
-            });";
+        $js[] = "$('#{$id}').sceditor({plugins:'bbcode',});";
         
         $view->registerJs(implode("\n", $js));
     }
