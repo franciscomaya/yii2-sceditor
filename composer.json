@@ -1,0 +1,21 @@
+{
+    "name": "franciscomaya/yii2-sceditor",
+    "description": "SCEditor, a lightweight WYSIWYG BBCode & HTML editor extension for Yii 2.0 Framework",
+    "type": "yii2-extension",
+    "keywords": "['yii2','extension','sceditor','bbcode']",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Francisco Maya Sarasty",
+            "email": "sarasty@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "franciscomaya\\sceditor\\": ""
+        }
+    }
+}
