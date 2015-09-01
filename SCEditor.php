@@ -46,7 +46,7 @@ class SCEditor extends InputWidget
         /*if (isset($this->clientOptions['locale'])) {
             $view->registerJsFile($assetBundle->baseUrl."/languages/".$this->clientOptions['locale'].".js", ['depends' => [\franciscomaya\sceditor\SCEditorAsset::className()]]);
         }*/
-        $langFile = "language/{$this->clientOptions['locale']}.js";
+        $langFile = "languages/{$this->clientOptions['locale']}.js";
         $assetBundle->js[] = $langFile;
         
         $options = $this->clientOptions !== false && !empty($this->clientOptions)
