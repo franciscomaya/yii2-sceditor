@@ -17,7 +17,7 @@ class SCEditorAsset extends AssetBundle
     public $depends = [
         'yii\web\YiiAsset',
         'yii\web\JqueryAsset',
-        'franciscomaya\sceditor\SCEditorAsset',
+        //'franciscomaya\sceditor\SCEditorAsset',
         //'yii\bootstrap\BootstrapAsset',
     ];
     
