@@ -35,11 +35,11 @@ class SCEditor extends InputWidget
         
         $view = $this->getView();
         
-        $prueba = SCEditorWidgetAsset::register($view);
+        $prueba = SCEditorAsset::register($view);
         
         $id = $this->options['id'];
         
-        $this->clientOptions['emoticonsRoot'] = $prueba->baseUrl;
+        $this->clientOptions['emoticonsRoot'] = $prueba->baseUrl."/";
         
         $options = $this->clientOptions !== false && !empty($this->clientOptions)
                 ? Json::encode($this->clientOptions)
