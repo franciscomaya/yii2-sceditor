@@ -8,7 +8,7 @@ class SCEditorAsset extends AssetBundle
 {
     public $js = [
         'minified/jquery.sceditor.bbcode.min.js',
-        'adapters/jquery.js'
+        //'adapters/jquery.js'
     ];
     
     public $css = [
