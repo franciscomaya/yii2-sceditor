@@ -4,7 +4,7 @@ namespace franciscomaya\sceditor;
 
 use yii\web\AssetBundle;
 
-class SCEditorWidgetAsset extends AssetBundle
+class SCEditorLanguageAsset extends AssetBundle
 {
     public $depends = [
         'franciscomaya\sceditor\SCEditorAsset'

@@ -35,12 +35,16 @@ class SCEditor extends InputWidget
         
         $view = $this->getView();
         
-        $prueba = SCEditorAsset::register($view);
+        $assetBundle = SCEditorAsset::register($view);
         
         $id = $this->options['id'];
         
         if(!isset($this->clientOptions['emoticonsRoot'])){
-            $this->clientOptions['emoticonsRoot'] = $prueba->baseUrl."/";
+            $this->clientOptions['emoticonsRoot'] = $assetBundle->baseUrl."/";
+        }
+        
+        if (isset($this->clientOptions['locale'])) {
+            $this->registerJsFile($assetBundle->baseUrl."/languages/".$this->clientOptions['locale'].".js");
         }
         
         $options = $this->clientOptions !== false && !empty($this->clientOptions)
