@@ -19,10 +19,6 @@ class SCEditorAsset extends AssetBundle
         'yii\web\JqueryAsset',
     ];
     
-    public $publishOptions = [
-        'forceCopy'=>true,
-    ];
-    
     public function init()
     {
         $this->sourcePath = __DIR__ . '/assets/sceditor';
