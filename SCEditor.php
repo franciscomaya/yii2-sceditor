@@ -44,7 +44,7 @@ class SCEditor extends InputWidget
         }
         
         if (isset($this->clientOptions['locale'])) {
-            $this->registerJsFile($assetBundle->baseUrl."/languages/".$this->clientOptions['locale'].".js");
+            $view->registerJsFile($assetBundle->baseUrl."/languages/".$this->clientOptions['locale'].".js");
         }
         
         $options = $this->clientOptions !== false && !empty($this->clientOptions)
