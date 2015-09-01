@@ -11,6 +11,8 @@ use yii\widgets\InputWidget;
  */
 class SCEditor extends InputWidget
 {
+    public $clientOptions = [];
+    
     public function init()
     {
         parent::init();
@@ -37,7 +39,11 @@ class SCEditor extends InputWidget
         
         $id = $this->options['id'];
         
-        $js[] = "$('#{$id}').sceditor({plugins:'bbcode',});";
+        $options = $this->clientOptions !== false && !empty($this->clientOptions)
+                ? Json::encode($this->clientOptions)
+                : '{}';
+        
+        $js[] = "$('#{$id}').sceditor({$options});";
         
         $view->registerJs(implode("\n", $js));
     }
