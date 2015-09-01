@@ -43,11 +43,15 @@ class SCEditor extends InputWidget
             $this->clientOptions['emoticonsRoot'] = $assetBundle->baseUrl."/";
         }
         
-        /*if (isset($this->clientOptions['locale'])) {
-            $view->registerJsFile($assetBundle->baseUrl."/languages/".$this->clientOptions['locale'].".js", ['depends' => [\franciscomaya\sceditor\SCEditorAsset::className()]]);
-        }*/
-        $langFile = "language/{$this->clientOptions['locale']}.js";
-        $assetBundle->js[] = $langFile;
+        if (isset($this->clientOptions['style'])) {
+            $styleFile = "{$this->clientOptions['style']}";
+            $assetBundle->css[] = $styleFile;
+        }
+        
+        if (isset($this->clientOptions['locale'])) {
+            $languageFile = "languages/{$this->clientOptions['locale']}.js";
+            $assetBundle->js[] = $languageFile;
+        }
         
         $options = $this->clientOptions !== false && !empty($this->clientOptions)
                 ? Json::encode($this->clientOptions)
