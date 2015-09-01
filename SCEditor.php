@@ -39,7 +39,7 @@ class SCEditor extends InputWidget
         
         $id = $this->options['id'];
         
-        $this->clientOptions['filebrowserUploadUrl'] = $prueba->basePath;
+        $this->clientOptions['emoticonsRoot'] = $prueba->basePath;
         
         $options = $this->clientOptions !== false && !empty($this->clientOptions)
                 ? Json::encode($this->clientOptions)
