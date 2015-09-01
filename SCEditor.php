@@ -35,9 +35,11 @@ class SCEditor extends InputWidget
         
         $view = $this->getView();
         
-        SCEditorWidgetAsset::register($view);
+        $prueba = SCEditorWidgetAsset::register($view);
         
         $id = $this->options['id'];
+        
+        $this->clientOptions['filebrowserUploadUrl'] = $prueba->basePath;
         
         $options = $this->clientOptions !== false && !empty($this->clientOptions)
                 ? Json::encode($this->clientOptions)
