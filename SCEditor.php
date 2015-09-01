@@ -35,7 +35,7 @@ class SCEditor extends InputWidget
         
         $view = $this->getView();
         
-        SCEditorAsset::register($view);
+        SCEditorWidgetAsset::register($view);
         
         $id = $this->options['id'];
         
