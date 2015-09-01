@@ -39,7 +39,7 @@ class SCEditor extends InputWidget
         
         $id = $this->options['id'];
         
-        $this->clientOptions['emoticonsRoot'] = $prueba->basePath;
+        $this->clientOptions['emoticonsRoot'] = $prueba->baseUrl;
         
         $options = $this->clientOptions !== false && !empty($this->clientOptions)
                 ? Json::encode($this->clientOptions)
