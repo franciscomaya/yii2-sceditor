@@ -8,7 +8,6 @@ class SCEditorAsset extends AssetBundle
 {
     public $js = [
         'minified/jquery.sceditor.bbcode.min.js',
-        //'adapters/jquery.js'
     ];
     
     public $css = [
@@ -18,7 +17,8 @@ class SCEditorAsset extends AssetBundle
     public $depends = [
         'yii\web\YiiAsset',
         'yii\web\JqueryAsset',
-        'yii\bootstrap\BootstrapAsset',
+        'franciscomaya\sceditor\SCEditorAsset',
+        //'yii\bootstrap\BootstrapAsset',
     ];
     
     public function init()
