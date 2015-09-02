@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist franciscomaya/yii2-sceditor "*"
+php composer.phar require franciscomaya/yii2-sceditor:dev-master
 ```
 
 or add
 
 ```
-"franciscomaya/yii2-sceditor": "*"
+"franciscomaya/yii2-sceditor" : "dev-master"
 ```
 
 to the require section of your `composer.json` file.
@@ -28,4 +28,18 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \franciscomaya\sceditor\AutoloadExample::widget(); ?>```
+use franciscomaya\sceditor\SCEditor;
+
+<?= $form->field($model, 'text')->widget(SCEditor::className(), [
+        'options' => ['rows' => 6],
+        'clientOptions' => [
+            'plugins' => 'bbcode',
+        ]
+    ]) ?>
+```
+
+
+Further Information
+-----
+
+Please, check the [SCEditor plugin site](http://www.sceditor.com/documentation/options/) documentation for further information about its configuration options.

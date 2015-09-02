@@ -1,9 +1,18 @@
 <?php
-
+/**
+ * @copyright Copyright (c) 2015, Francisco Maya Sarasty
+ * @license http://opensource.org/licenses/BSD-3-Clause
+ */
 namespace franciscomaya\sceditor;
 
 use yii\web\AssetBundle;
 
+/**
+ * SCEditorAsset
+ *
+ * @author Francisco Maya Sarasty <sarasty@gmail.com>
+ * @package franciscomaya\sceditor
+ */
 class SCEditorAsset extends AssetBundle
 {
     public $js = [
